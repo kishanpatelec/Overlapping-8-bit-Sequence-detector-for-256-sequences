@@ -252,7 +252,7 @@ module seqdet(
 
 				4'd7: begin
 
-					//*********** if desired bit comes then move to the next state*******************************	
+					//*****if desired bit comes then make ouput high and move to one state among the previous state***	
 				
 					if((in_bit==seq[7]) && (in_bit==seq[6]) && (seq[5:0]==seq[6:1])) begin 
 						n_state=4'd7;
